@@ -23,8 +23,6 @@ A policy engine that enforces Sealed Secrets and Signed Capabilities.
 ---
 
 ## Component 1: Lilith Runtime
-
-## Component 1: Lilith Runtime
 **Confidential, Real-Time Execution Environment for AI Agents**
 
 The **Lilith Runtime** is a deterministic, capability-mediated container engine that treats the Host OS as an availability-only provider (adversarial for confidentiality). It enforces a strict **Denial-by-Default** posture where agents possess no ambient authority; all side effects are mediated through typed handles, ensuring that even a compromised agent cannot exceed its provisioned blast radius.
@@ -76,7 +74,8 @@ The **Lilith Runtime** is a deterministic, capability-mediated container engine 
 **Lilith Defense** is the agentic defense layer that provides the provable constraints. It shifts security from detecting bad behavior to **making bad behavior inexpressible** via strict capability accounting and cryptographic anchoring.
 
 ### L4.0 Policy Verification Layer
-Formal verification of policies (pre-execution).
+Formal, pre-execution verification of agent policies and capability grants against a core security model (for completeness, soundness, and non-violation).
+Specs: Logic: SMT solver/Datalog, TLA+/Promela; Model: Capability DSL; Target: Policy completeness/soundness, non-violation (e.g., no raw secrets); Deployment: Attestation-gated artifacts; Cadence: Updates must pass verification.
 
 ### L4.1 WASI Object-Capability Gate
 The **fundamental control plane**.
