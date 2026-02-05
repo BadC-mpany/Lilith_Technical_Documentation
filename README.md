@@ -74,8 +74,8 @@ The **Lilith Runtime** is a deterministic, capability-mediated container engine 
 **Lilith Defense** is the agentic defense layer that provides the provable constraints. It shifts security from detecting bad behavior to **making bad behavior inexpressible** via strict capability accounting and cryptographic anchoring.
 
 ### L4.0 Policy Verification Layer
-Formal, pre-execution verification of agent policies and capability grants against a core security model (for completeness, soundness, and non-violation).
-Specs: Logic: SMT solver/Datalog, TLA+/Promela; Model: Capability DSL; Target: Policy completeness/soundness, non-violation (e.g., no raw secrets); Deployment: Attestation-gated artifacts; Cadence: Updates must pass verification.
+Formal, pre-execution verification of agent policies and capability grants against a core security model (for completeness, soundness, non-violation).
+Specs: Logic: SMT solver/Datalog, TLA+/Promela; Model: CEDAR; Target: Policy completeness, soundness, non-violation; Deployment: Attestation-gated artifacts; Cadence: Updates must pass verification.
 
 ### L4.1 WASI Object-Capability Gate
 The **fundamental control plane**.
